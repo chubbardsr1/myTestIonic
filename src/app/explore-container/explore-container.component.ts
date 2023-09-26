@@ -9,4 +9,30 @@ export class ExploreContainerComponent {
 
   @Input() name?: string;
 
+
+  
+  style = {
+    width: '100%',
+    height: '100%',
+    flex: '1 1 auto',
+  };
+
+  funding = [
+    {
+      test : 'abc'
+    },
+    {
+      test : "xyz"
+    }
+  ]
+
+  colDef = [
+    {
+      headerName : 'test',
+      field : 'test',
+      width: 80
+    },
+  ]
+
+
 }
