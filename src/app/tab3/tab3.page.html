@@ -23,8 +23,13 @@
       <ion-input type="text" [value]="barcode.rawValue"></ion-input>
     </ion-item>
   </ion-list>
+
+  <div>
+    isSupported : {{isSupported}}
+  </div>
+
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button (click)="scan()" [disabled]="!isSupported">
+    <ion-fab-button (click)="scan()" >
       <ion-icon name="scan">SCAN</ion-icon>
     </ion-fab-button>
   </ion-fab>
